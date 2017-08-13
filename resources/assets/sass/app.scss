@@ -1,4 +1,5 @@
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 $navbar-color: #3c3e42;
 
@@ -21,6 +22,9 @@ textarea {
   text-align: center;
 }
 
+.alert-status {
+  @extend .alert-info;
+}
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
