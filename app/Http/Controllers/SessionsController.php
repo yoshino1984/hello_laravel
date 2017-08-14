@@ -36,7 +36,7 @@ class SessionsController extends Controller
        ];
 
        if (Auth::attempt($credentials, $request->has('remember'))) {
-          if(Auth::user()-activated){
+          if(Auth::user()->activated){
                // 登录成功后的相关操作
                session()->flash('success', '欢迎回来！');
                return redirect()->intended(route('users.show', [Auth::user()]));
